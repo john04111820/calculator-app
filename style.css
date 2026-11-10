@@ -4,14 +4,13 @@
     box-sizing: border-box;
 }
 
-button {
-    padding: 20px;
-    font-size: 1.2em;
-    border: none;
-    background: #e3f2fd;  /* 改為淺藍色 */
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Arial', sans-serif;
 }
 
 .calculator {
@@ -51,7 +50,7 @@ button {
 }
 
 button:hover {
-    background: #bbdefb;  /* hover時的顏色 */
+    background: #e0e0e0;
 }
 
 button:active {
@@ -59,13 +58,13 @@ button:active {
 }
 
 .equals {
-    background: #2196f3;  /* 改為藍色 */
+    background: #667eea;
     color: white;
     grid-row: span 2;
 }
 
 .equals:hover {
-    background: #1976d2;
+    background: #5568d3;
 }
 
 .zero {
