@@ -57,41 +57,64 @@ function calculatePercentage() {
     }
 }
 
+
+function getCurrentValue() {
+    try {
+        if (currentInput === 'Error' || currentInput.trim() === '') {
+            return null;
+        }
+
+        let value = Number(eval(currentInput));
+
+        if (!Number.isFinite(value)) {
+            return null;
+        }
+
+        return value;
+    } catch (error) {
+        return null;
+    }
+}
+
+// M+ 記憶加法
 function memoryAdd() {
-    try {
-        let currentValue = eval(currentInput);
-        memoryValue += currentValue;
-        console.log('Memory:', memoryValue);
-        // 可選：顯示提示
-        showMemoryIndicator();
-    } catch (error) {
-        console.error('Memory add error:', error);
-    }
+    let value = getCurrentValue();
+
+    if (value === null) return;
+
+    memoryValue += value;
+
+    currentInput = '0';
+    updateDisplay();
+    showMemoryIndicator();
 }
 
+// M- 記憶減法
 function memorySubtract() {
-    try {
-        let currentValue = eval(currentInput);
-        memoryValue -= currentValue;
-        console.log('Memory:', memoryValue);
-        showMemoryIndicator();
-    } catch (error) {
-        console.error('Memory subtract error:', error);
-    }
+    let value = getCurrentValue();
+
+    if (value === null) return;
+
+    memoryValue -= value;
+
+    currentInput = '0';
+    updateDisplay();
+    showMemoryIndicator();
 }
 
+// MR 記憶讀取
 function memoryRecall() {
-    currentInput = memoryValue.toString();
+    currentInput = String(memoryValue);
     updateDisplay();
 }
 
+// MC 記憶清除
 function memoryClear() {
     memoryValue = 0;
-    console.log('Memory cleared');
     hideMemoryIndicator();
 }
 
-// 可選：顯示記憶指示器
+// 記憶指示燈
 function showMemoryIndicator() {
     display.style.borderLeft = '5px solid #ff9800';
 }
