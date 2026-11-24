@@ -9,17 +9,25 @@
 <body>
     <div class="calculator">
         <div class="display" id="display">0</div>
-            <div class="memory-buttons">
-        <button onclick="memoryAdd()" class="memory-btn">M+</button>
-        <button onclick="memorySubtract()" class="memory-btn">M-</button>
-        <button onclick="memoryRecall()" class="memory-btn">MR</button>
-        <button onclick="memoryClear()" class="memory-btn">MC</button>
+        <div class="memory-buttons">
+            <button onclick="memoryAdd()" class="memory-btn">M+</button>
+            <button onclick="memorySubtract()" class="memory-btn">M-</button>
+            <button onclick="memoryRecall()" class="memory-btn">MR</button>
+            <button onclick="memoryClear()" class="memory-btn">MC</button>
     </div>
+
+     <div class="scientific-buttons">
+        <button onclick="scientificCalc('sin')">sin</button>
+        <button onclick="scientificCalc('cos')">cos</button>
+        <button onclick="scientificCalc('tan')">tan</button>
+        <button onclick="scientificCalc('log')">log</button>
+        <button onclick="scientificCalc('sqrt')">√</button>
+        <button onclick="scientificCalc('pow')">x²</button>
+    </div>
+    
         <div class="buttons">
             <button onclick="clearDisplay()">C</button>
             <button onclick="calculatePercentage()">%</button>
-            <button onclick="appendToDisplay('/')">/</button>
-            <button onclick="appendToDisplay('*')">*</button>
             <button onclick="appendToDisplay('/')">/</button>
             <button onclick="appendToDisplay('*')">*</button>
             <button onclick="deleteLast()">←</button>
