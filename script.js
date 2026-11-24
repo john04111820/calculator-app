@@ -56,8 +56,6 @@ function calculatePercentage() {
         }, 1500);
     }
 }
-<<<<<<< HEAD
-
 
 function getCurrentValue() {
     try {
@@ -125,7 +123,6 @@ function hideMemoryIndicator() {
 }
 // 新增科學計算函數
 function scientificCalc(operation) {
-=======
 // 新增科學計算函數（下拉選單版本）
 function applyScientificOp() {
     let select = document.getElementById('scientificOp');
@@ -163,12 +160,9 @@ function applyScientificOp() {
         
         currentInput = result.toString();
         updateDisplay();
-<<<<<<< HEAD
-=======
         
         // 重置選單
         select.value = '';
->>>>>>> feature/scientific-v2
     } catch (error) {
         currentInput = 'Error';
         updateDisplay();
