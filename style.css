@@ -96,7 +96,6 @@ button:active {
 .zero {
     grid-column: span 2;
 }
-<<<<<<< HEAD
 /* 科學計算按鈕樣式 */
 .scientific-buttons {
     display: grid;
@@ -114,7 +113,7 @@ button:active {
 
 .scientific-buttons button:hover {
     background: #45a049;
-=======
+    
 /* 科學計算下拉選單樣式 */
 .scientific-dropdown {
     margin-bottom: 10px;
@@ -163,5 +162,4 @@ button:active {
 
 .memory-btn:active {
     transform: scale(0.95);
->>>>>>> feature/scientific-v2
 }
