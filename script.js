@@ -121,8 +121,6 @@ function showMemoryIndicator() {
 function hideMemoryIndicator() {
     display.style.borderLeft = 'none';
 }
-// 新增科學計算函數
-function scientificCalc(operation) {
 // 新增科學計算函數（下拉選單版本）
 function applyScientificOp() {
     let select = document.getElementById('scientificOp');
@@ -130,7 +128,6 @@ function applyScientificOp() {
     
     if (!operation) return;
     
->>>>>>> feature/scientific-v2
     try {
         let value = eval(currentInput);
         let result;
