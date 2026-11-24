@@ -33,6 +33,32 @@ body {
     word-wrap: break-word;
 }
 
+.memory-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.memory-btn {
+    padding: 15px;
+    font-size: 1em;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.memory-btn:hover {
+    background: #f57c00;
+}
+
+.memory-btn:active {
+    transform: scale(0.95);
+}
+
 .buttons {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -70,29 +96,21 @@ button:active {
 .zero {
     grid-column: span 2;
 }
-
-.memory-buttons {
+/* 科學計算按鈕樣式 */
+.scientific-buttons {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 8px;
     margin-bottom: 10px;
 }
 
-.memory-btn {
-    padding: 15px;
-    font-size: 1em;
-    background: #ff9800;
+.scientific-buttons button {
+    padding: 12px 8px;
+    font-size: 0.9em;
+    background: #4caf50;
     color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-.memory-btn:hover {
-    background: #f57c00;
-}
-
-.memory-btn:active {
-    transform: scale(0.95);
+.scientific-buttons button:hover {
+    background: #45a049;
 }
