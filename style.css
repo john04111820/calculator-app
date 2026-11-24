@@ -96,6 +96,7 @@ button:active {
 .zero {
     grid-column: span 2;
 }
+<<<<<<< HEAD
 /* 科學計算按鈕樣式 */
 .scientific-buttons {
     display: grid;
@@ -113,4 +114,54 @@ button:active {
 
 .scientific-buttons button:hover {
     background: #45a049;
+=======
+/* 科學計算下拉選單樣式 */
+.scientific-dropdown {
+    margin-bottom: 10px;
+}
+
+.scientific-dropdown select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1em;
+    background: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.scientific-dropdown select:focus {
+    outline: 2px solid #45a049;
+}
+
+.scientific-dropdown option {
+    background: white;
+    color: #333;
+}/* 新增記憶按鈕樣式 */
+.memory-buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.memory-btn {
+    padding: 15px;
+    font-size: 1em;
+    background: #ff9800;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.memory-btn:hover {
+    background: #f57c00;
+}
+
+.memory-btn:active {
+    transform: scale(0.95);
+>>>>>>> feature/scientific-v2
 }
